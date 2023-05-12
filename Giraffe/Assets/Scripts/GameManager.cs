@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-  
+ 
+public Animator animator;
 public GameObject completeLevelUI;
 public GameObject TopScreen;
 public GameObject Tutor;
@@ -17,6 +18,7 @@ public void Reset ()
  {
      completeLevelUI.SetActive(true);
      TopScreen.SetActive(false);
+       animator.Play("Camera_movement");
      
  }
     
