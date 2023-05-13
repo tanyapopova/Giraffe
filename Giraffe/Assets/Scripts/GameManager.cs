@@ -8,6 +8,7 @@ public Animator animator;
 public GameObject completeLevelUI;
 public GameObject TopScreen;
 public GameObject Tutor;
+public GameObject CheatMenu;
 
 public void Reset ()
 {
@@ -32,7 +33,11 @@ public void Reset ()
               TopScreen.SetActive(true);
          }
     
+     if (Input.GetMouseButtonDown(0))
+         {
+             CheatMenu.SetActive(true);
+         }
  
-
+        
 }
 }
