@@ -29,7 +29,7 @@ private int score = 0;
     {
              
       
-    if(Input.GetKeyDown("space"))
+    if(Input.GetMouseButtonDown(0))
          {
               animator.SetTrigger("HeadUp");
          }

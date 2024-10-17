@@ -25,9 +25,9 @@ public void Reset ()
     
 
  void Update()
-    {    
-      
-    if(Input.GetKeyDown("space"))
+    {
+        // Input.GetKeyDown("space")
+        if (Input.GetMouseButtonDown(0)) 
          {
               Tutor.SetActive(false);
               TopScreen.SetActive(true);
